@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gatitos API</title>
+    <link rel="stylesheet" href="gatitos.css" />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="wrap">
+      <h1>
+        API
+        <span class="material-icons-outlined">
+            <img src="./2x/outline_pets_black_24dp.png" />
+          </span>
+         CAT
+        
+      </h1>
+      <span id="error"></span>
+
+      <div class="container1">
+        <div class="h">
+            <h2>Escoge el gatito que más te guste</h2>
+        </div>
+       
+        <div class="random">
+          <section id="randomGatitos" class="uno">
+            <article>
+                <figure>
+                    <img id="img1" alt="gatitos" />
+                </figure>
+             
+              <button id="btn1">Guardar en favoritos
+                <span class="material-icons-outlined">
+                    <img src="./1x/outline_favorite_black_24dp.png">
+                </span>
+              </button>
+            </article>
+            <article>
+                <figure>
+                    <img id="img2" alt="gatitos" />
+                </figure>
+             
+              <button id="btn2">Guardar en favoritos
+                <span class="material-icons-outlined">
+                    <img src="./1x/outline_favorite_black_24dp.png">
+                </span>
+              </button>
+            </article>
+          </section>
+        </div>
+        <button type="button" onclick="loadRandomMichies()">
+          <span class="material-icons-outlined">
+            <img src="./1x/outline_pets_black_24dp.png" />
+          </span>
+          Ver más gatitos
+          <span class="material-icons-outlined">
+            <img src="./1x/outline_pets_black_24dp.png" />
+          </span>
+        </button>
+      </div>
+     <div class="container2">
+        <section id="uploadMichi" class="dos">
+            <h2>Sube y guarda la foto de tu gatito en favoritos</h2>
+            <form id="uploadingForm">
+              <input id="file" type="file" name="file" />
+              <button type="button" onclick="uploadPhoto()">
+                Sube la foto de tu gatito
+              </button>
+            </form>
+          </section>
+          <section id="favoritesMichies" class="tres">
+            <h2>Gatitos favoritos</h2>
+          </section>
+     </div>
+      
+    </div>
+
+    <script src="gatitos.js"></script>
+  </body>
+</html>
