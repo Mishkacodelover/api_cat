@@ -1,3 +1,6 @@
+import dotenv from "dotenv"
+dotenv.config()
+
 const URL_API_RANDOM =
   "https://api.thecatapi.com/v1/images/search?limit=2&api_key=live_w7JFkwlpLIJ9SvoQCSHBPezmFByNVki11W5H3XPoZB7COHXpeAdTQh5WqGe0XE03";
 
@@ -8,7 +11,8 @@ const URL_API_FAV_DELETE = "https://api.thecatapi.com/v1/favourites/:favouriteId
 
 const URL_API_UPLOAD = "https://api.thecatapi.com/v1/images/upload";
 
-const API_KEY = "live_w7JFkwlpLIJ9SvoQCSHBPezmFByNVki11W5H3XPoZB7COHXpeAdTQh5WqGe0XE03";
+const API_KEY = process.env.API_KEY;
+
 
 let spanError = document.getElementById("error");
 
